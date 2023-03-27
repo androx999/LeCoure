@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.hero{
+  text-align: center;
+  background-color: rgba(255,255,255,1.00);
+  font-family: 'Poppins';
+  font-size:20px;
+  padding-top:20px;
+}
+form{
+  display: inline-block;
+}
+.table{
+  margin-left: auto;
+  margin-right: auto;
+  color: #f2f2f2;
+}
+.table.type{
+  font-weight: bold;
+}
+td{
+  padding-right:10px;
+  padding-left:10px;
+  padding-bottom:50px;
+  font-size:20px;
+}
+.inLink{
+  color: rgb(220, 220, 220);
+  font-weight: bold;
+  text-shadow: 
+            -1px -1px 1px #1F1F1F, 
+            1px 1px 1px #1F1F1F, 
+            -1px 1px 1px #1F1F1F, 
+            1px -1px 1px #1F1F1F;
+            border-color: #1F1F1F;
+}
+.info{
+  display: inline-block;
+  padding-top:30px;
+  background-color: rgb(70, 70, 70);
+  border: 1px solid;
+  border-color: black;
+  color: #f2f2f2;
+  width: 100%;
+}
+#v1.vino{
+  display: none;
+}
+#v2.vino{
+  display: none;
+}
+#v3.vino{
+  display: none;
+}
+
+.Vinos{
+  display: inline-block;
+  margin:20px;
+  padding-right: 3em;
+}
+.contenido{
+  display:inline-block;
+  margin:20px;
+}
+.info h3{
+  color: rgb(220, 220, 220);
+  font-weight: bold;
+  text-shadow: 
+            -1px -1px 1px #1F1F1F, 
+            1px 1px 1px #1F1F1F, 
+            -1px 1px 1px #1F1F1F, 
+            1px -1px 1px #1F1F1F;
+            border-color: #1F1F1F;
+}
+
+.text{
+  width: 15em;
+}
+
+.text2{
+  width: 15em;
+  height: 3em;
+}
+
+.button{
+  width: 10em;
+  height: 3em;
+  border-radius: 5em;
+  font-weight: bold;
+  transition: 1s;
+  border-color: #1F1F1F;
+}
+
+.button:hover{
+  background-color: #fff560;
+  color: #f2f2f2;
+  text-shadow: 
+            -1px -1px 1px #1F1F1F, 
+            1px 1px 1px #1F1F1F, 
+            -1px 1px 1px #1F1F1F, 
+            1px -1px 1px #1F1F1F;
+            border-color: #1F1F1F;
+            transition: 1s;
+}
+
+@media only screen and (min-width: 1080px){
+.text{
+  width: 30em;
+}
+.text2{
+  width: 20em;
+  height: 3em;
+}
+#v1.vino{
+  display: block;
+  position: absolute;
+  width:350px;
+  top: 19em;
+  left: 13em;
+}
+#v2.vino{
+  display: block;
+  position: absolute;
+  z-index: 990;
+  width:400px;
+  top: 26em;
+  left: 10em;
+  transform: scaleX(-1);
+}
+#v3.vino{
+  display: block;
+  position: absolute;
+  z-index: 999;
+  width:200px;
+  top: 35em;
+  left: 22em;
+}
+.reservacion{
+  padding-left: 15em;
+}
+}
+

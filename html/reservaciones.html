@@ -1,0 +1,124 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="shortcut icon" href="../images\icon.png">
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' >
+    <link rel="stylesheet" href="../css/hero.css" />
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="inicio.html">Le<span>Coeur</span></a>
+            <i id="menu_mobile" class='bx bx-menu bx-md bx-flashing-hover' style='color:#bdc1bd'  ></i>
+            <nav>
+                <i id="close_mobile" class='bx bx-x bx-md' style='color:#bdc1bd' ></i>
+                <ul class="ft_nav">
+                    <li><a href="quienes somos.html" >Quienes somos</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+                <ul class="sd_nav">
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a class="reserv2" href="#">Reservaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+      <!--Estas imagenes solo las añadi porque pensé que sobraba mucho espacio, pueden eliminarlas si quieren-->
+      <!--Si las eliminan, eliminen también el div "Vinos", el div "contenido" y sus correspondientes en hero.css-->
+            <div class ="contenido">
+      <h4>Solicitud de Reservación</h4>
+      <p>
+        Ingrese su información de contacto y datos de la reservación que desea realizar.
+      </p>
+      <p>
+        Después de enviar la forma, le enviaremos un correo para confirmar la reservación
+      </p>
+      <br />
+      <br />
+      <div class ="Vinos">
+        <img id="v1" class = "vino" src="../images/WINE.jpg" />
+        <img id="v2" class ="vino" src="../images/WINE2.jpg" />
+        <img id="v3" class = "vino" src="../images/WINE3.jpg" />
+      </div>
+      <form class="reservacion" action="mailto:#" method="post" enctype="text/plain">
+        <table>
+          <tr>
+            <td>
+              Nombre:
+            </td>
+            <td>
+              <input class="text2" type="text" name="nombre" value "" required/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Correo electrónico:
+            </td>
+            <td>
+              <input class="text2" type="email" name="email" value = "" required/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Fecha de la Reservación:
+            </td>
+            <td>
+              <input class="text2" type = "date" id ="fecha" name="fechaDeReservación" value="" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Hora:
+            </td>
+            <td>
+              <input class="text2" type="time" id="hora" name="horario" value="" required/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Número de Personas:
+            </td>
+            <td>
+              <select class="text2" name="personas" size="1" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+               </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Tipo de evento (Opcional):
+            </td>
+            <td>
+              <select class="text2" name="evento">
+               <option></option>
+               <option>Cumpleaños</option>
+               <option>Reuniones</option>
+               <option>Eventos especiales</option>
+               <option>Otros</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <input class="button" type="submit" value="Enviar">
+      </form>
+    </div>
+    </section>
+    <script src = "../js/fechaHoy.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/horario.js"></script>
+  </body>
+</html>
